@@ -138,7 +138,7 @@ main{
 footer{
     text-align: center;
     padding: 5px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(167, 167, 167);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @media (max-width:800px){
