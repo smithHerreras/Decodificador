@@ -10,6 +10,8 @@ body{
     background-color: #E5E5E5;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 main{
     width: 94%;
@@ -132,6 +134,12 @@ main{
     border: 1px solid darkblue ;
     border-radius: 24px;
     margin-bottom: 5%;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(182, 182, 182);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @media (max-width:800px){
     .contenedor{
