@@ -9,32 +9,36 @@
 body{
     background-color: #E5E5E5;
     height: 100vh;
-    box-sizing: border-box;
     display: flex;
 }
-.encabezado{
-    width: 100px;
-    margin-top: 2%;
+main{
+    width: 94%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .contenedor{
     width: 100%;
-    margin: 23px 27px 57px 0;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    gap: 10%;
+    margin-left: 10%;
 }
 .contenedor_encriptador{
-    height: 100%;
-    width: 60%;
+    width: 59%;
+    height: 83%;
+    margin-top: 10%;
 }
-.contenedor_encriptador input{
-    width: auto;
-    padding: 15% 0 50% 0;
+.contenedor_encriptador textarea{
+    width: 100%;
+    padding: 1% 0 50% 0;
     font-size: 32px;
     outline: none;
     border: none;
     background-color: #E5E5E5;
 }
-.contenedor_encriptador input::placeholder{
+.contenedor_encriptador textarea::placeholder{
     color: darkblue;
 }
 .contenedor_encriptador p{
@@ -51,16 +55,16 @@ body{
     width: 16px;
 }
 .contenedor_encriptador_botones{
-    width: 680px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 4%;
 }
 .contenedor_encriptador_botones button{
     font-family:var(--fuente);
     font-size: 16px;
     font-weight: 400;
-    width: 328px;
+    width: 48%;
     height: 67px;
     border: 1px solid darkblue;
     border-radius: 24px;
@@ -73,66 +77,99 @@ body{
     background-color: #D8DFE8;
     color: darkblue;
 }
-.contenedor_visualisador{
-    width: 30%;
+.contenedor_resultado{
+    width: 31%;
+    height: auto;
+    margin-top: 3%;
     background-color: white;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.contenedor_visualisador_img{
-    height: auto;
-    margin: 0 32px;
+.contenedor_resultado_img{
+    height: 40%;
 }
-.contenedor_visualisador_texto{
-    height: 122px;
-    width: 336px;
+.contenedor_resultado_texto{
+    height: 100%;
+    width: 84%;
     margin: 32px 19px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     text-align: center;
+    justify-content: center;
 }
-.contenedor_visualisador_subtitulo{
+.resultado_texto2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedor_resultado_texto textarea{
+    height: 100%;
+    border: none;
+}
+.contenedor_resultado_subtitulo{
     font-family:var(--fuente);
     font-size: 24px;
     font-weight: bold;
 }
-.contenedor_visualisador_parrafo{
+.contenedor_resultado_parrafo{
+    height: 48px;
     font-family:var(--fuente);
     font-size: 16px;
     font-weight: 400;
 }
-@media (max-width:1200px){
-    body{
-        flex-direction: column;
-        width: auto;
-    }
+.Boton_copiar{
+    justify-self: flex-end;
+    width: 90%;
+    height: 67px;
+    margin: 0px 19px;
+    background-color: white;
+    border: 1px solid darkblue ;
+    border-radius: 24px;
+    margin-bottom: 5%;
+}
+@media (max-width:800px){
     .contenedor{
-        width: auto;
+        margin-left: 0;
         flex-direction: column;
-        margin-left: 52px;
         gap: 64px;
     }
-    .contenedor_visualisador{
-        width: 680px;
+    .contenedor_encriptador{
+        width: 100%;
+        height: auto;
+        margin-left: 3%;
     }
-    .contenedor_visualisador_img{
+    .contenedor_resultado{
+        width: 100%;
+        margin-left: 3%;
+    }
+    .contenedor_resultado_img{
         display: none;
     }
-    .contenedor_visualisador_texto{
+    .contenedor_resultado_texto{
         height: auto;
         width: auto;
-        margin: 32px;
     }
 }
-@media (max-width:894px){
-    .contenedor_visualisador{
-        width: 332px;
+@media (max-width:375px){
+    .contenedor_encriptador{
+        width: auto;
     }
     .contenedor_encriptador_botones{
+        width: 100%;
         flex-direction: column;
+        gap: 24px;
     }
+    .contenedor_encriptador_botones button{
+        width: 100%;
+    }
+    .contenedor_resultado{
+        width: 100%;
+    }
+
 }
